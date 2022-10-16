@@ -30,7 +30,11 @@
         <div class="col-2">
             <h1>Информация</h1>
             <div class="elem">
-                <h3>Погода в Москве</h3>   
+                <div>
+                    <b>Город: </b> {{ info.city }} <br>
+                    <b>Температура:</b> {{ info.temp }}<sup>o</sup><br>
+                </div>
+                <img src="https://openweathermap.org/img/w/{{ info.icon }}.png" alt="картинка погоды">  
             </div>
         </div>
     </div>

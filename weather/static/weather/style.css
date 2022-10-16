@@ -90,5 +90,13 @@ input {
     width: 300px;
     border-radius: 10px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+}
+
+.elem div {
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
 }
