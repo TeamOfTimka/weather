@@ -29,14 +29,17 @@
         </div>
         <div class="col-2">
             <h1>Информация</h1>
+            {% for city in info %}
             <div class="elem">
                 <div>
-                    <b>Город: </b> {{ info.city }} <br>
-                    <b>Температура:</b> {{ info.temp }}<sup>o</sup><br>
+                    <p><b>Город: </b> {{ city.city }}</p> 
+                    <p><b>Температура:</b> {{ city.temp }}<sup>o</sup></p>
                 </div>
-                <img src="https://openweathermap.org/img/w/{{ info.icon }}.png" alt="картинка погоды">  
+                <img src="https://openweathermap.org/img/w/{{ city.icon }}.png" alt="картинка погоды">  
             </div>
+            {% endfor %}
         </div>
+        
     </div>
 </body>
 </html>

@@ -86,17 +86,17 @@ input {
 
 .elem {
     background-color: #d55;
-    height: 75px;
+    height: 100px;
     width: 300px;
     border-radius: 10px;
     display: flex;
     justify-content: space-between;
     padding: 0;
-    margin: 0;
+    margin: 15px;
 }
 
 .elem div {
     display: flex;
     flex-direction: column;
-    margin: 0 20px;
+    margin: 0 0 0 20px;
 }
