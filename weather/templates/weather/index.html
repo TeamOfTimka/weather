@@ -21,9 +21,10 @@
     <div class="container">
         <div class="col-1">
             <h1>Погода в вашем городе</h1>
-            <form action="">
+            <form action="" method="post">
+                {% csrf_token %}
                 <label for="city">Город</label>
-                <input type="text" id="city" name="city" placeholder="Введите город">
+                {{ form.name }}
                 <input type="submit" name="send" value="Узнать" class="button">
             </form>
         </div>
